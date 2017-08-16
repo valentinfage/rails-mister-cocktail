@@ -1,5 +1,6 @@
 class Cocktail < ApplicationRecord
   has_many :doses
+  has_attachment :photo
 
   def unused_ingredients
     if self.doses.count > 0

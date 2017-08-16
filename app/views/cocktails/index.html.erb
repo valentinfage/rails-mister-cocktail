@@ -15,9 +15,8 @@
               <div class="flipper">
                 <div class="front">
                   <div class="card text-center">
-                    <% if cocktail.picture %>
-                        <div class="card-header" style="background-image: url('<%= image_path cocktail.picture%>')">
-                        </div>
+                   <% if cocktail.photo? %>
+                       <%= cl_image_tag cocktail.photo.path, width: 551, height: 175, crop: :fill %>
                         <% else %>
                         <div class="card-header" style="background-image: url('http://www.seriouseats.com/images/2014/11/20141104-cocktail-party-old-fashioneds-holiday-vicky-wasik-3.jpg')">
                         </div>
@@ -33,3 +32,6 @@
       <% end %>
     </div>
   </div>
+
+
+

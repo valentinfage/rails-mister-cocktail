@@ -211,7 +211,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   cloudinary (= 1.1.7)
-  coffee-rails (~> 4.2)
+  coffee-rails
   figaro
   font-awesome-sass
   jbuilder (~> 2.0)

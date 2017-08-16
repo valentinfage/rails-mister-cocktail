@@ -1,3 +1,26 @@
+### version de val ###
+
+
+# require 'json'
+# require 'open-uri'
+
+
+# puts "creating seeds"
+# url = 'http://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
+# ingredient_serialized = open(url).read
+# ingredient = JSON.parse(ingredient_serialized)
+
+# ingredient["drinks"].each do |d|
+#   Ingredient.create(name:d["strIngredient1"])
+# end
+
+
+# #ici on itere sur la valeur d'un hash
+# # un hash dont drink est une clée dont la valeur est un tableau de hash
+
+### version cours ###
+
+
 Cocktail.destroy_all
 Ingredient.destroy_all
 
